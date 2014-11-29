@@ -14,6 +14,11 @@ app = Flask(__name__)
 def hello_world():
 	return "Hello, World!"
 
+# dynamic route
+@app.route("/test")
+def search():
+	return "Hello"
+
 # start the development server using the run() method
 if __name__ == "__main__":
 	app.run()
